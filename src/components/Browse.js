@@ -8,7 +8,7 @@ import Header from "./Header";
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import MainConatiner from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
-
+import usePopularMovies from "../hooks/usePopularMovies";
 const Browse = () => {
     //fetch data from tmdb api and update the store
 
@@ -30,6 +30,7 @@ const Browse = () => {
     */
 
     useNowPlayingMovies();
+    usePopularMovies();
     return (
         <div>
             <Header />
