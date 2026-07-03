@@ -28,6 +28,37 @@
    - register for TMDB api && create an app &get access token
    - get data from TMDB now playing movies list API
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  - EP-03
+  - GPT Search Page
+  - GPT Search Bar
+  - (BONUS) Multi -lingual feature in our App
+  - integrate GPT api
+
+
+
+
+
+  
 - Browse(after authentication)
    - Header
    - Main Movie

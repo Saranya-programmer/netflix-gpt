@@ -9,6 +9,8 @@ import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import MainConatiner from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
 import usePopularMovies from "../hooks/usePopularMovies";
+import {useSelector} from "react-redux";
+import GptSearch  from "./GptSearch";
 const Browse = () => {
     //fetch data from tmdb api and update the store
 
@@ -29,13 +31,21 @@ const Browse = () => {
 
     */
 
+   const showGptSearch=useSelector((store)=>store.gpt.showGptSearch);
+
     useNowPlayingMovies();
     usePopularMovies();
     return (
         <div>
             <Header />
+            {showGptSearch?(<GptSearch/>):
+            (<>
             <MainConatiner/>
             <SecondaryContainer/>
+            </>)}
+            
+            {/* <MainConatiner/>
+            <SecondaryContainer/> */}
 
             {/*
 
